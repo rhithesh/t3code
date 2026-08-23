@@ -6629,6 +6629,14 @@ function ChatViewContent(props: ChatViewProps) {
             </div>
             {/* Messages Wrapper */}
             <div className="relative flex min-h-0 flex-1 flex-col">
+              <div
+                aria-hidden="true"
+                className="pointer-events-none absolute inset-0 z-0 bg-cover bg-top opacity-20 dark:opacity-10"
+                style={{
+                  backgroundImage:
+                    "url(https://49q0hnrcmf.ufs.sh/f/L7RH6O6FrUe2bFWI5fPjKL7PQUhtDdq3mWbrVRkEfpaN6sB8)",
+                }}
+              />
               {/* Messages — LegendList handles virtualization and scrolling internally */}
               <MessagesTimeline
                 agentPanelModel={agentPanelModel}
